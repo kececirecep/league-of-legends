@@ -46,6 +46,7 @@ function App() {
   async function getHeroesSearch(search) {
     try {
       const response = await axios.get("https://raw.githubusercontent.com/kececirecep/champion.json/main/lol");
+      
       const data = response.data.data;
       const heroList = Object.values(data).filter(hero => hero.id.toLowerCase().includes(search.toLowerCase()));
       setHeroes(heroList);

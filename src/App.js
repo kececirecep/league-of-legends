@@ -83,8 +83,7 @@ function App() {
             position: 'fixed',
             top: '50%',
             left: '50%',
-            transform: 'translate(-50%, -50%)',
-            backgroundColor: 'rgba(0, 0, 0, 0.5)',
+            transform: 'translate(-50%, -50%)', 
           },
           content: {
             width: '100%',
